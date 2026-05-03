@@ -13,7 +13,7 @@ RUN dotnet restore "SERMS.API/SERMS.API.csproj"
 COPY . .
 
 WORKDIR "/src/SERMS.API"
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish "SERMS.API.csproj" -c Release -o /app/publish
 
 # ---- Runtime stage ----
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
