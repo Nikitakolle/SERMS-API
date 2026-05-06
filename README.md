@@ -2,7 +2,7 @@
 
 SERMS is a multi-layer ASP.NET Core Web API application designed for event scheduling, room management, participant handling, and automated reminder processing.
 
-The project follows clean architecture principles and demonstrates enterprise-focused backend development practices including JWT authentication, centralized logging, background job scheduling, middleware-based exception handling, and Docker containerization.
+The project follows clean architecture principles and demonstrates enterprise-focused backend development practices including JWT authentication, centralized logging, background job scheduling, middleware-based exception handling, and Docker containerization. 
 
 ---
 
