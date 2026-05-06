@@ -134,6 +134,22 @@ Dashboard:
 
 ---
 
+## Screenshots
+
+### Swagger API Documentation
+![Swagger](images/swagger.JPG)
+
+### Extended Swagger Request Example
+![Extended Swagger](images/Extended_Swagger.JPG)
+
+### Hangfire Background Job Dashboard
+![Hangfire](images/hangfire.JPG)
+
+### Docker Image Build
+![Docker](images/docker.JPG)
+
+---
+
 ## Future Improvements
 
 - CI/CD Pipeline using GitHub Actions
