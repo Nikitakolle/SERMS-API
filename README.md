@@ -42,7 +42,7 @@ The project follows clean architecture principles and demonstrates enterprise-fo
 - Docker
 - GitHub
 - GitHub Codespaces
-- GitHub Actions (CI/CD - In Progress)
+- GitHub Actions (CI Pipeline Implemented)
 
 ---
 
@@ -150,9 +150,21 @@ Dashboard:
 
 ---
 
+## CI/CD Pipeline
+
+A Continuous Integration (CI) pipeline has been implemented using GitHub Actions.
+
+On every code push:
+- The application is built automatically
+- Dependencies are restored
+- Docker image is created
+
+This ensures consistent builds and validates the application during development.
+
+---
+
 ## Future Improvements
 
-- CI/CD Pipeline using GitHub Actions
 - Azure Deployment
 - Frontend Integration with React
 - Role-Based Authorization
