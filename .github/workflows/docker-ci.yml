@@ -1,0 +1,31 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore SERMS.API/SERMS.API.csproj
+
+      - name: Build Application
+        run: dotnet build SERMS.API/SERMS.API.csproj --no-restore
+
+      - name: Publish Application
+        run: dotnet publish SERMS.API/SERMS.API.csproj -c Release -o out
+
+      - name: Build Docker Image
+        run: docker build -t serms-api -f SERMS.API/Dockerfile .
